@@ -75,7 +75,7 @@ section {
 }
 
 .eyebrow-label {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--accent-dark);
     font-weight: 600;
     letter-spacing: 0.01em;
@@ -549,16 +549,38 @@ header {
     flex-shrink: 0;
 }
 
+/* ===== EDUCATION SECTION ===== */
+.education-section {
+    background: var(--bg-alt);
+}
+
+.education-section .wrap {
+    display: block;
+}
+
+.education-section .section-head {
+    max-width: 620px;
+    margin-bottom: 48px;
+}
+
+.edu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+}
+
 .edu-card {
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 18px;
-    padding: 34px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 26px;
-    align-items: start;
-    max-width: 760px;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 0 1 calc(50% - 11px);
+    min-width: 280px;
 }
 
 .edu-dot {
@@ -566,7 +588,6 @@ header {
     height: 14px;
     border-radius: 50%;
     background: var(--accent);
-    margin-top: 8px;
     box-shadow: 0 0 0 5px var(--accent-soft);
 }
 
@@ -588,8 +609,10 @@ header {
 }
 
 .edu-card .dates {
-    margin-top: 14px;
+    margin-top: auto;
+    padding-top: 14px;
     display: inline-block;
+    align-self: flex-start;
     font-family: var(--font-mono);
     font-size: 0.82rem;
     color: var(--ink-soft);
@@ -597,6 +620,8 @@ header {
     padding: 5px 10px;
     border-radius: 6px;
 }
+
+/* ===== END EDUCATION SECTION ===== */
 
 .projects-grid {
     display: grid;
@@ -612,6 +637,16 @@ header {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: -28px -28px 20px;
+    width: calc(100% + 56px);
+    display: block;
 }
 
 .project-tag-top {
@@ -884,19 +919,15 @@ footer .wrap {
         grid-template-columns: 1fr;
     }
 
+    .edu-card {
+        flex-basis: 100%;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
     .about-stats {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .edu-card {
-        grid-template-columns: 1fr;
-    }
-
-    .edu-dot {
-        display: none;
     }
 }

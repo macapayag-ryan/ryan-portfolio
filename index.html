@@ -180,18 +180,36 @@
         </div>
     </section>
 
-    <section class="about" id="education">
+    <section class="education-section" id="education">
         <div class="wrap">
             <div class="section-head reveal">
                 <span class="eyebrow-label">Education</span>
                 <h2>Academic background</h2>
             </div>
-            <div class="edu-card reveal">
-                <span class="edu-dot"></span>
-                <div>
-                    <h3>Bachelor of Science in Information Technology</h3>
-                    <div class="school">PHINMA University of Iloilo</div>
-                    <span class="dates">2023 — Present</span>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <span class="edu-dot"></span>
+                    <div>
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <div class="school">PHINMA University of Iloilo</div>
+                        <span class="dates">2023 — Present</span>
+                    </div>
+                </div>
+                <div class="edu-card reveal">
+                    <span class="edu-dot"></span>
+                    <div>
+                        <h3>Senior Highschool</h3>
+                        <div class="school">Pavia National Highschool</div>
+                        <span class="dates">2021 — 2023</span>
+                    </div>
+                </div>
+                <div class="edu-card reveal">
+                    <span class="edu-dot"></span>
+                    <div>
+                        <h3>Elementary</h3>
+                        <div class="school">Aganan-Ungka Elementary School</div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -207,6 +225,8 @@
             <div class="projects-grid">
 
                 <div class="project-card reveal">
+                    <img src="img/network_threat.png" alt="Network Threat Detection System dashboard screenshot"
+                        class="project-img">
                     <span class="project-tag-top">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
@@ -231,6 +251,8 @@
                 </div>
 
                 <div class="project-card reveal">
+                    <img src="img/student_database.png" alt="Student Information System interface screenshot"
+                        class="project-img">
                     <span class="project-tag-top">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
@@ -255,6 +277,7 @@
                 </div>
 
                 <div class="project-card reveal">
+                    <img src="img/barangay.png" alt="Barangay Database System interface screenshot" class="project-img">
                     <span class="project-tag-top">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
@@ -366,8 +389,7 @@
                     <textarea id="message" name="message" placeholder="What would you like to say?" required></textarea>
                 </div>
                 <button type="submit" class="send-btn">Send Message</button>
-                <p class="form-note" id="formNote">This form doesn't send anywhere yet — connect it to a service like
-                    Formspree, or your own backend, before going live.</p>
+                <p class="form-note" id="formNote"></p>
             </form>
         </div>
     </section>
